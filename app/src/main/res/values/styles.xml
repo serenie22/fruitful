@@ -19,7 +19,7 @@
 
 
     <style name="test" parents = "AppTheme">
-        <item name="android:windowBackground">@android:color/white</item>
+        <item name="android:background">#8dc26f</item>
     </style>
 
 </resources>

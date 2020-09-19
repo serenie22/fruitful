@@ -23,6 +23,7 @@ import java.util.*;
 
 public class MainActivity extends AppCompatActivity{
     //GoogleApiClient mGoogleApiClient;
+    // FirebaseAuth.getInstance().getCurrentUser().getUid();
     private static final int MY_REQUEST_CODE = 1;
     List<AuthUI.IdpConfig> providers;
     Button btn_signout;
