@@ -1,5 +1,6 @@
 package com.example.fruitful;
 
+import androidx.appcompat.app.AppCompatActivity;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
@@ -26,12 +27,29 @@ public class MainActivity extends AppCompatActivity{
     List<AuthUI.IdpConfig> providers;
     Button btn_signout;
 
+    Button button;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+/*
+        button = (Button) findViewById(R.id.button);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openNewActivity();
+            }
+        });
+    }
+    public void openNewActivity(){
+        Intent intent = new Intent(this, YourProfile.class);
+        startActivity(intent);
+    }
+*/
+
         btn_signout = (Button)findViewById(R.id.btn_signout);
 
         btn_signout.setOnClickListener(new View.OnClickListener(){
@@ -61,13 +79,7 @@ public class MainActivity extends AppCompatActivity{
 
         GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
                 .requestEmail()
-                .build();;
-/*546093011185-ed58j9uv0b2kl2q6sevbgrbmpp118f7i.apps.googleusercontent.com
-        mGoogleApiClient = new GoogleApiClient
-                .Builder(this).enableAutoManage(this,this)
-                .addApi(Auth. ,gso)
                 .build();
-                */
 
     }
 
@@ -97,6 +109,5 @@ public class MainActivity extends AppCompatActivity{
             }
         }
     }
-
 
 }
