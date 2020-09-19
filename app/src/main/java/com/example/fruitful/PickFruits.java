@@ -11,12 +11,12 @@ import androidx.appcompat.widget.Toolbar;
 
 import android.view.View;
 
-public class ScrollingActivity extends AppCompatActivity {
+public class PickFruits extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_scrolling);
+        setContentView(R.layout.activity_pick_fruits);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         CollapsingToolbarLayout toolBarLayout = (CollapsingToolbarLayout) findViewById(R.id.toolbar_layout);

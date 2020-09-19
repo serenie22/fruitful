@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
         });
     }
     public void openNewActivity(){
-        Intent intent = new Intent(this, ScrollingActivity.class);
+        Intent intent = new Intent(this, YourProfile.class);
         startActivity(intent);
     }
 
