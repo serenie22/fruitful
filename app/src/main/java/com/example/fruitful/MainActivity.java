@@ -1,5 +1,6 @@
 package com.example.fruitful;
 
+import androidx.appcompat.app.AppCompatActivity;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
@@ -26,12 +27,31 @@ public class MainActivity extends AppCompatActivity{
     List<AuthUI.IdpConfig> providers;
     Button btn_signout;
 
+
+public class MainActivity extends AppCompatActivity {
+    Button button;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+/*
+        button = (Button) findViewById(R.id.button);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openNewActivity();
+            }
+        });
+    }
+    public void openNewActivity(){
+        Intent intent = new Intent(this, YourProfile.class);
+        startActivity(intent);
+    }
+*/
+
         btn_signout = (Button)findViewById(R.id.btn_signout);
         btn_signout.setOnClickListener(new View.OnClickListener(){
             public void onClick(View view){
@@ -95,6 +115,5 @@ public class MainActivity extends AppCompatActivity{
             }
         }
     }
-
 
 }
