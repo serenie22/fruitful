@@ -33,6 +33,7 @@ public class MainActivity extends AppCompatActivity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         btn_signout = (Button)findViewById(R.id.btn_signout);
+
         btn_signout.setOnClickListener(new View.OnClickListener(){
             public void onClick(View view){
                 AuthUI.getInstance()
@@ -51,6 +52,7 @@ public class MainActivity extends AppCompatActivity{
                 });
             }
         });
+
         providers = Arrays.asList(
                 new AuthUI.IdpConfig.EmailBuilder().build(),
                 new AuthUI.IdpConfig.GoogleBuilder().build());
