@@ -4,31 +4,38 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/home_page"
+    android:background="#8dc26f"
+    android:onClick="@string/title_activity_scrolling"
     tools:context=".MainActivity">
 
-    <!-- Fruitful -->
     <TextView
-        android:id="@+id/fruitful"
-        android:layout_width="215dp"
-        android:layout_height="87dp"
-        android:layout_alignParentLeft="true"
-        android:layout_marginLeft="73dp"
-        android:layout_centerVertical="true"
-        android:text="Fruitful"
-        android:gravity="top"
-        />
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="136dp"
+        android:fontFamily="@font/nunito_bold"
+        android:text="@string/fruitful"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display3"
+        android:textColor="#FDC830"
+        android:textSize="64sp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible" />
 
     <Button
-        android:id="@+id/loginButton"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="604dp"
-        android:text="Login"
-        android:textSize=""
-        android:layout_centerInParent="true"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="161dp"
-        android:textColor="#FFFFFFFF"/>
-
+        android:id="@+id/button"
+        android:layout_width="305dp"
+        android:layout_height="49dp"
+        android:layout_marginBottom="292dp"
+        android:background="#76b852"
+        android:text="@string/login"
+        android:fontFamily="@font/nunito_bold"
+        android:textColor="#FFFFFF"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
