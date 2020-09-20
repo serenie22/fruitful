@@ -1,5 +1,6 @@
 package com.example.fruitful;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import com.google.android.material.appbar.CollapsingToolbarLayout;
@@ -10,8 +11,11 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 import android.view.View;
+import android.widget.Button;
 
 public class ScrollingActivity extends AppCompatActivity {
+//leaderboard!
+Button button;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,5 +34,17 @@ public class ScrollingActivity extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
+        button = (Button) findViewById(R.id.button);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openNewActivity();
+            }
+        });
+
+    }
+    public void openNewActivity(){
+        Intent intent = new Intent(this, profile.class);
+        startActivity(intent);
     }
 }
