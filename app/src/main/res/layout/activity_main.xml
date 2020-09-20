@@ -7,17 +7,22 @@
     android:background="@drawable/home_page"
     tools:context=".MainActivity">
 
-    <!-- Fruitful -->
+
     <TextView
-        android:id="@+id/fruitful"
-        android:layout_width="215dp"
-        android:layout_height="87dp"
-        android:layout_alignParentLeft="true"
-        android:layout_marginLeft="73dp"
-        android:layout_centerVertical="true"
-        android:text="Fruitful"
-        android:gravity="top"
-        />
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="124dp"
+        android:text="@string/fruitful"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display3"
+        android:textColor="#FDC830"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible" />
+
+    <!-- Fruitful -->
 
     <Button
         android:id="@+id/btn_signout"
