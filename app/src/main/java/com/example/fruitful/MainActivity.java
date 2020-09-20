@@ -1,5 +1,6 @@
 package com.example.fruitful;
 
+<<<<<<< HEAD
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
@@ -24,17 +25,30 @@ public class MainActivity extends AppCompatActivity {
     private static final int MY_REQUEST_CODE = 1;
     List<AuthUI.IdpConfig> providers;
     Button btn_signout;
+=======
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 
+import androidx.appcompat.app.AppCompatActivity;
+>>>>>>> 2a70733ac98f871131190c6eed92e80f61ffd412
+
+public class MainActivity extends AppCompatActivity {
+    Button button;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+<<<<<<< HEAD
 
         //login = (Button) findViewById(R.id.login);//get id of button 1
 
 
 /*
+=======
+>>>>>>> 2a70733ac98f871131190c6eed92e80f61ffd412
         button = (Button) findViewById(R.id.button);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -44,6 +58,7 @@ public class MainActivity extends AppCompatActivity {
         });
     }
     public void openNewActivity(){
+<<<<<<< HEAD
         Intent intent = new Intent(this, YourProfile.class);
         startActivity(intent);
     }
@@ -113,5 +128,11 @@ public class MainActivity extends AppCompatActivity {
             }
         }
     }
+=======
+        Intent intent = new Intent(this, profile.class);
+        startActivity(intent);
+    }
+
+>>>>>>> 2a70733ac98f871131190c6eed92e80f61ffd412
 
 }
