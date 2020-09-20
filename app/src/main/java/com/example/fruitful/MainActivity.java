@@ -1,6 +1,5 @@
 package com.example.fruitful;
 
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
@@ -21,20 +20,19 @@ import com.google.firebase.auth.FirebaseUser;
 
 import java.util.*;
 
-public class MainActivity extends AppCompatActivity{
-    //GoogleApiClient mGoogleApiClient;
-    // FirebaseAuth.getInstance().getCurrentUser().getUid();
+public class MainActivity extends AppCompatActivity {
+    //Button login, simpleButton2;
     private static final int MY_REQUEST_CODE = 1;
     List<AuthUI.IdpConfig> providers;
     Button btn_signout;
 
-    Button button;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-
-
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        //login = (Button) findViewById(R.id.login);//get id of button 1
+
 
 /*
         button = (Button) findViewById(R.id.button);
@@ -93,6 +91,7 @@ public class MainActivity extends AppCompatActivity{
                 .setTheme(R.style.test)
                 .build(), MY_REQUEST_CODE
         );
+
     }
 
     @Override
