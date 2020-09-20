@@ -11,16 +11,12 @@
         android:theme="@style/AppTheme">
 
         <activity
-            android:name=".Leaderboard"
-            android:label="@string/title_activity_leaderboard"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
-        <activity
-            android:name=".PickFruits"
-            android:label="@string/title_activity_pick_fruits"
+            android:name=".profile"
+            android:label="@string/title_activity_profile"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".YourProfile"
-            android:label="@string/title_activity_your_profile"
+            android:name=".ScrollingActivity"
+            android:label="@string/title_activity_scrolling"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".MainActivity">
             <intent-filter>

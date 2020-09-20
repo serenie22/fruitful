@@ -18,8 +18,16 @@
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
 
-    <style name="test" parents = "AppTheme">
-        <item name="android:background">#8dc26f</item>
+    <style name="user_">
+
+        <item name="android:textSize">
+            36sp
+        </item>
+
+        <item name="android:textColor">
+            #FDC830
+        </item>
+
     </style>
 
 </resources>
