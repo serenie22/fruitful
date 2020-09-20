@@ -85,6 +85,8 @@ public class MainActivity extends AppCompatActivity{
     }
 
     private void showSignInOptions(){
+        TextView myText = (TextView)getLayoutInflater().inflate(R.layout.fruitful, null);
+
         startActivityForResult(
                 AuthUI.getInstance().createSignInIntentBuilder()
                 .setAvailableProviders(providers)
